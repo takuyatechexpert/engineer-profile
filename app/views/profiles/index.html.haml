@@ -1,12 +1,18 @@
 .title
   Enginner Profile
-.user
-  my page
-.follow
-  follow
-.form
-  .form__title
-    user search
-  .form__user
-  .form__btn
+
+.main
+  %ul.side__menu
+    %li.side__menu__myPage
+      my page
+    %li.side__menu__follow
+      follow
+  .form
+    .form__title
+      user search
+    .form__box
+      = form_with do |f|
+        .form__box__input
+          =f.text_field :string, placeholder: "type a keyword", class: "form__box__text"
+          = f.submit 'search', class: 'submit__btn'
   
