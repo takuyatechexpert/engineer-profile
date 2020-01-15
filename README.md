@@ -19,7 +19,7 @@
 ## follows テーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|references|null: false|
+|user|references|foreign_key: true|
 |follow|references|null: false|
 |user_id|index|null: false, unipue: true|
 |follow_id|index|null: false, unipue: true|
