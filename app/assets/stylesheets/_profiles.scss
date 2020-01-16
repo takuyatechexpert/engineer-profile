@@ -4,7 +4,7 @@
 
 .title{
   font-size: 4rem;
-  margin: 2% 0 70px 4%;
+  margin: 20px 0 70px 4%;
 }
 
 .main{
@@ -26,29 +26,29 @@
     margin: 0 auto;
   }
 
-  .form{
+  .main__form{
   margin-right: 15%;
   padding: 0 20px;
   width: 70%;
 
-    .form__title{
+    .main__form__title{
       font-size: 2.5rem;
       padding-bottom: 10px;
     }
 
-    .form__box{
+    .main__form__box{
 
       &__input{
         display: flex;
       }
-      .form__box__text{
+      .main__form__box__text{
         font-size: 1.8rem;
         height: 50px;
         width: 80%;
         padding-left: 10px;
       }
       
-      .submit__btn{
+      .main__submit__btn{
         background: #494949;
         color: white;
         font-size: 1.5rem;
@@ -56,5 +56,20 @@
         margin-left: 10px;
       }
     }
+    .main__users{
+
+      .main__users__name{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      padding: 10px 20px 0 10px;
+
+        .main__users__details{
+          
+        }
+      }
+    }
   }
 }
+

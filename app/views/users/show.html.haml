@@ -1,0 +1,31 @@
+.user__header
+  %ul.user__box
+    %li.user__box__picture
+      写真
+    %li.user__box__name
+      = @user.name
+  .follow__btn
+    = render "relationships/follow_button", user: @user
+.user__main
+  .user__age
+    age
+    25歳
+  .user__jobs
+    occupation
+    フリーランス
+  .user__experience
+    experience
+    2年
+  .user__programminglang
+    programmnig lang
+    html,css,ruby
+  .user__sns
+    SNS
+    tweeter
+  .user__pr
+    PR
+    フリーランス2年目です
+    よろしくお願いします
+  .user__form
+    Inquiry form
+    ここは問い合わせフォーム
