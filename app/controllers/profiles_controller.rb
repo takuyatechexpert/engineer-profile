@@ -3,4 +3,9 @@ class ProfilesController < ApplicationController
     @users = User.where.not(id: current_user.id)
     # werer.notでログインしているユーザーを除いている
   end
+
+  def search
+    @users = User.search(params[:keyword])
+  end
+
 end
