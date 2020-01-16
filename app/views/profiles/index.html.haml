@@ -4,7 +4,7 @@
 .main
   %ul.side__menu
     %li.side__menu__myPage
-      my page
+      = link_to "my page", user_path(current_user.id)
     %li.side__menu__follow
       follow
     .user__edit
@@ -13,10 +13,13 @@
     .main__form__title
       user search
     .main__form__box
-      = form_with do |f|
-        .main__form__box__input
-          =f.text_field :string, placeholder: "type a keyword", class: "main__form__box__text"
-          = f.submit 'search', class: 'main__submit__btn'
+      %input#user-search-field.chat-group-form__input{placeholder: "追加したいユーザー名を入力してください", type: "text"}/
+      #user-search-result
+
+      -# = form_with do |f|
+      -#   .main__form__box__input
+      -#     =f.text_field :string, placeholder: "type a keyword", class: "main__form__box__text"
+      -#     = f.submit 'search', class: 'main__submit__btn'
     .main__users
       - @users.each do |user|
         .main__users__name
