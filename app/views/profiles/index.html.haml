@@ -7,8 +7,8 @@
       = link_to "my page", user_path(current_user.id)
     %li.side__menu__follow
       follow
-    .user__edit
-      = link_to "log out", destroy_user_session_path, method: :delete, class: 'btn'
+    .user__logout
+      = link_to "log out", destroy_user_session_path, method: :delete, class: 'user__logout__btn'
   .main__form
     .main__form__title
       user search

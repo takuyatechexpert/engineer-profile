@@ -11,33 +11,44 @@
           .field-label
             = f.label :name
           .field-input
-            = f.text_field :name, autofocus: true
+            = f.text_field :name, placeholder: "please enter", autofocus: true
         .field
           .field-label
             = f.label :email
           .field-input
-            = f.email_field :email
-
+            = f.email_field :email, placeholder: "please enter"
         .field
           .field-label
-            = f.label :jobs
+            = f.label :age
           .field-input
-            = f.text_field :jobs
+            = f.text_field :age, placeholder: "please enter"
+        .field
+          .field-label
+            = f.label :occupation
+          .field-input
+            = f.text_field :occupation, placeholder: "please enter"
+        .field
+          .field-label
+            = f.label :experience
+          .field-input
+            = f.text_field :experience, placeholder: "please enter"
         .field
           .field-label
             = f.label :sns
           .field-input
-            = f.text_field :sns
+            = f.text_field :sns, placeholder: "please enter"
         .field
           .field-label
             = f.label :password
             %i (英数字8文字以上)
           .field-input
-            = f.password_field :password, autocomplete: "off"
+            = f.password_field :password, placeholder: "please enter", autocomplete: "off"
         .field
           .field-label
             = f.label :password_confirmation
           .field-input
-            = f.password_field :password_confirmation, autocomplete: "off"
+            = f.password_field :password_confirmation, placeholder: "please enter", autocomplete: "off"
         .actions
           = f.submit "Create Account", class: 'btn'
+
+

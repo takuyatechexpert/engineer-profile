@@ -9,23 +9,26 @@
 .user__main
   .user__age
     age
-    25歳
+    = @user.age
   .user__jobs
     occupation
-    フリーランス
+    = @user.occupation
   .user__experience
     experience
-    2年
-  .user__programminglang
-    programmnig lang
-    html,css,ruby
+    = @user.experience
+  
   .user__sns
     SNS
-    tweeter
+    = @user.sns
+  .user__programminglang
+    Programmnig lang
+    = @user.programming_lang
   .user__pr
     PR
-    フリーランス2年目です
-    よろしくお願いします
+    = @user.pr
   .user__form
     Inquiry form
     ここは問い合わせフォーム
+
+  .user__edit
+    = link_to "edit", edit_user_path, class: 'user__edit__btn'
