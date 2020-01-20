@@ -24,11 +24,14 @@ class User < ApplicationRecord
     self.followings.include?(other_user)
   end
 
+  # def matchers
+  #   User.where(id: reverse_of_relationships.select(:follow_id)).where(current_user = follow_id)
+  # end
 
   def self.search(search)
     return User.all unless search
     User.where('name LIKE(?)', "%#{search}%")
   end
-
+  
   mount_uploader :image, ImageUploader
 end
