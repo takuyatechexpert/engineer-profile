@@ -1,0 +1,8 @@
+.follwTitle
+  Follow list
+  .follwTitle__main
+    - @users.relationships.each do |relationships|
+      .main__users__name
+        = relationships.follow.name
+        = link_to "詳細", user_path(relationships.follow.id), class: "main__users__details"
+    -# = @users.relationships.user_id

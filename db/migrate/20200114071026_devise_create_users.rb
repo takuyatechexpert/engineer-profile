@@ -11,7 +11,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string :occupation,         null: true, default: ""
       t.string :experience,         null: true, default: ""
       t.string :sns,                null: true, default: ""
-      t.string :image,              null: true, default: ""
+      t.string :image,              null: true
       t.text   :programming_lang,   null: true 
       t.text   :pr,                 null: true
       

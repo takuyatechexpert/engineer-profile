@@ -30,4 +30,5 @@ class User < ApplicationRecord
     User.where('name LIKE(?)', "%#{search}%")
   end
 
+  mount_uploader :image, ImageUploader
 end
