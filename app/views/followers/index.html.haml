@@ -1,0 +1,11 @@
+.follwerTitle
+  Follower list
+  .follwerTitle__main
+    -# - @users.each do |user|
+    -# -if current_user.id == follow_id
+    -#   = user.email
+    - @users.each do |user|
+      .main__users__name
+        = user.name
+        -# - if relationship.user_id == current_user.id
+        -#   = relationship.follower
