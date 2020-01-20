@@ -1,7 +1,7 @@
 .user__header
   %ul.user__box
     %li.user__box__picture
-      写真
+      = image_tag @user.image.url
     %li.user__box__name
       = @user.name
   .follow__btn
@@ -29,6 +29,7 @@
   .user__form
     Inquiry form
     ここは問い合わせフォーム
-
-  .user__edit
-    = link_to "edit", edit_user_path, class: 'user__edit__btn'
+    
+  - if current_user == @user
+    .user__edit
+      = link_to "edit", edit_user_path, class: 'user__edit__btn'

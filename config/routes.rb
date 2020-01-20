@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 devise_for :users
 root "profiles#index"
 
+  resources :follows, only: :index
   resources :users, only: [:edit, :update, :show]
   resources :profiles, only: :index do
     collection{ get "search" }
