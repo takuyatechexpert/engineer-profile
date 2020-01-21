@@ -1,11 +1,18 @@
-.follwerTitle
-  Follower list
-  .follwerTitle__main
-    -# - @users.each do |user|
-    -# -if current_user.id == follow_id
-    -#   = user.email
-    - @users.each do |user|
+.follwTitle
+  Follow list
+  .follwTitle__main
+    -# - @users.relationships.each do |relationships|
+    -#   .main__users__name
+    -#     = relationships.user.name
+        -# = link_to "詳細", user_path(relationships.follow.id), class: "main__users__details"
+    -# - @relationships.each do |relationships|
+    -#   .main__users__name
+    -#     - if relationships.follow.name == current_user.id
+    -#       = relationships.follow.name
+    -#       = relationships.user.name
+    -# 上記はコントローラの記載を@relationships = Relationship.allで試した
+    - @users.followers.each do |user|
       .main__users__name
         = user.name
-        -# - if relationship.user_id == current_user.id
-        -#   = relationship.follower
+        = link_to "詳細", user_path(user.id), class: "main__users__details"
+        -# 架空のテーブルfollowers(フォローしてくれてる人)の情報をuserテーブル経由で取り出している
