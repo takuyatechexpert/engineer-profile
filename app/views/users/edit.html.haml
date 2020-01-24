@@ -39,11 +39,6 @@
             = f.text_field :experience
         .field
           .field-label
-            = f.label :sns
-          .field-input
-            = f.text_field :sns
-        .field
-          .field-label
             = f.label :sns, "SNS"
           .field-input
             = f.text_field :sns
@@ -51,12 +46,12 @@
           .field-label
             = f.label :programmnig_lang, "Programmnig Lang"
           .field-input
-            = f.text_area :programming_lang, rows: 10, cols: 51
+            = f.text_area :programming_lang, rows: 8, cols: 51, wrap: "hard", placeholder: "please enter"
         .field
           .field-label
             = f.label :pr, "PR"
           .field-input
-            = f.text_area :pr, rows: 10, cols: 51
+            = f.text_area :pr, rows: 15, cols: 58, wrap: "hard", placeholder: "please enter"
         .actions
           = f.submit "Update", class: 'btn'
 

@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def update
     if current_user.update(user_params)
-      redirect_to root_path, notice: 'profileを更新しました'
+      redirect_to user_path(current_user.id), notice: 'profileを更新しました'
     else
       render :edit
     end

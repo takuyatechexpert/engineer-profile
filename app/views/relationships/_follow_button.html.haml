@@ -4,9 +4,12 @@
       = f.hidden_field :follower, value: current_user.name
       = f.hidden_field :follow_id, value: user.id
     
-      = f.submit 'フォロー中', class: 'follow-now'
+      = f.submit 'Following', class: 'follow-now'
   - else
     = form_for(current_user.relationships.build) do |f|
       = f.hidden_field :follow_id, value: user.id
       = f.hidden_field :follower, value: current_user.name
-      = f.submit 'フォロー', class: 'follows'
+      = f.submit 'Follow', class: 'follows'
+- else
+  .user__edit
+    = link_to "Edit", edit_user_path, class: 'user__edit__btn'

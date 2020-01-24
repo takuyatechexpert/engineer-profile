@@ -1,37 +1,52 @@
+body{
+  background-image: url("backgroundimage.jpg");
+  height: 1270px;
+  // width: 1920px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
 .account-page {
+  height: 1270px;
   .account-page__inner {
-    width: 980px;
-    margin: 60px auto;
-    padding: 60px;
+    height: 50%;
+    width: 30%;
+    margin: 170px 68% 0 32%;
+    padding: 60px 70px 60px;
     background-color: #fff;
+    opacity: 0.85;
     border: 1px solid #ddd;
     border-radius: 5px;
+    overflow: scroll;
 
-    .account-page__inner--left, .account-page__inner--right {
-      float: left;
-      width: 50%;
-    }
-    &:after {
-      clear: both;
-      content: "";
-      display: block;
+    .account-page__inner__text{
+      width: 100%;
+      font-size: 32px;
+      margin-bottom: 10px;
+
+      .logUp__logIn--btn{
+        text-decoration: none;
+        color: black;
+      }
+      .logUp__logIn--btn:hover{
+        color: #cecccc;
+        transition-duration: 0.6s;
+      }
     }
   }
 
-  .account-page__header {
+  .account-page__signUp {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
       font-size: 40px;
       font-weight: 200;
-
-      &:after {
-        content: '';
-        display: block;
-        width: 60px;
-        margin-top: 5px;
-        border-bottom: 1px solid #38aef0;
-      }
     }
 
     h5 {
@@ -41,18 +56,35 @@
     }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 70px;
       color: #fff;
       background-color: #ccc;
-      font-size: 14px;
+      border-radius: 6px;
+      width: 60%;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background    : rgb(168, 167, 167);
     }
   }
-
+  
+  .btn {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+  }
+  
   .field {
     margin-bottom: 10px;
+    margin: 0 auto;
 
     .field-label {
-      padding: 10px 0;
+      padding: 20px 0;
       letter-spacing: 1px;
       font-size: 14px;
       font-weight: 200;
@@ -68,29 +100,35 @@
         padding: 10px;
         letter-spacing: 1px;
       }
+
+      #user_programming_lang{
+        border: solid 1px gainsboro;
+        }
       #user_pr{
       border: solid 1px gainsboro;
       }
     }
+    .actions{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        font-size: 1.2rem;
+        height: 50px;
+        width: 60%;
+        line-height: 50px;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        color: #fff;
+        background-color: #494949;
+        border-radius: 6px;
+      }
+      input:hover {
+        background    : #2c2c2c;
+      }
+    }
   }
 
-  .btn {
-    display: inline-block;
-    height: 50px;
-    padding: 0 30px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    text-align: center;
-    border: none;
-    border-radius: 2px;
-  }
-
-  input[type='submit'] {
-    float: left;
-    margin-top: 20px;
-    color: #fff;
-    background-color: #38aef0;
-  }
 
   .field-label {
     .field_with_errors {

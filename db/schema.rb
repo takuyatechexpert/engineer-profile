@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2020_01_15_064327) do
     t.string "experience", default: ""
     t.string "sns", default: ""
     t.string "image"
-    t.text "programming_lang"
+    t.string "programming_lang", default: ""
     t.text "pr"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
