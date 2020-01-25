@@ -1,8 +1,7 @@
 #account-page.account-page
-  .account-page__inner.clearfix
-    .account-page__inner--left.account-page__header
+  .account-page__inner
+    .account-page__inner__text
       %h2 Create Account
-      %h5 新規アカウントの作成
       = render "devise/shared/links"
     .account-page__inner--right.user-form
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
@@ -34,9 +33,19 @@
             = f.text_field :experience, placeholder: "please enter"
         .field
           .field-label
-            = f.label :sns
+            = f.label :sns, "SNS"
           .field-input
             = f.text_field :sns, placeholder: "please enter"
+        .field
+          .field-label
+            = f.label :programming_lang, "Programmnig Lang"
+          .field-input
+            = f.text_area :programming_lang, rows: 10, cols: 51, placeholder: "please enter"
+        .field
+          .field-label
+            = f.label :pr, "PR"
+          .field-input
+            = f.text_area :pr, rows: 10, cols: 51, placeholder: "please enter"
         .field
           .field-label
             = f.label :password
@@ -50,5 +59,3 @@
             = f.password_field :password_confirmation, placeholder: "please enter", autocomplete: "off"
         .actions
           = f.submit "Create Account", class: 'btn'
-
-
