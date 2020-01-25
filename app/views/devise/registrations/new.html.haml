@@ -33,12 +33,12 @@
             = f.text_field :experience, placeholder: "please enter"
         .field
           .field-label
-            = f.label :sns
+            = f.label :sns, "SNS"
           .field-input
             = f.text_field :sns, placeholder: "please enter"
         .field
           .field-label
-            = f.label :programmnig_lang, "Programmnig Lang"
+            = f.label :programming_lang, "Programmnig Lang"
           .field-input
             = f.text_area :programming_lang, rows: 10, cols: 51, placeholder: "please enter"
         .field
@@ -59,5 +59,3 @@
             = f.password_field :password_confirmation, placeholder: "please enter", autocomplete: "off"
         .actions
           = f.submit "Create Account", class: 'btn'
-
-

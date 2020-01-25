@@ -11,7 +11,7 @@
 }
 
 .account-page {
-  height: 1270px;
+  height: 1150px;
 
   .account-page__inner {
     height: 50%;
@@ -112,27 +112,26 @@
       border: solid 1px gainsboro;
       }
     }
-    .actions{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      input {
-        font-size: 1.2rem;
-        height: 50px;
-        width: 60%;
-        line-height: 50px;
-        letter-spacing: 1px;
-        margin-top: 50px;
-        color: #fff;
-        background-color: #494949;
-        border-radius: 6px;
-      }
-      input:hover {
-        background    : #2c2c2c;
-      }
-    }
   }
-
+        .actions{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          input {
+            font-size: 1.2rem;
+            height: 50px;
+            width: 60%;
+            line-height: 50px;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            color: #fff;
+            background-color: #494949;
+            border-radius: 6px;
+          }
+          input:hover {
+            background    : #2c2c2c;
+          }
+        }
 
   .field-label {
     .field_with_errors {
@@ -184,3 +183,6 @@
     font-size: 13px;
   }
 }
+.imageField{
+  display: none;
+} 
