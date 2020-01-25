@@ -1,30 +1,31 @@
-.user__header
-  .user__box
-    .user__box__picture
-      = image_tag @user.image.url, class: "user__box__picture--design"
-  .followOrEdit__btn
-    = render "relationships/follow_button", user: @user
+.profileMain
+  .user__header
+    .user__box
+      .user__box__picture
+        = image_tag @user.image.url, class: "user__box__picture--design"
+    .followOrEdit__btn
+      = render "relationships/follow_button", user: @user
 
-.user__main
-  .user__main__left
-    .user__box__name
-      = @user.name
-    %ul.user__age
-      %li Age
-      %li= @user.age
-    %ul.user__jobs
-      %li Occupation
-      %li= @user.occupation
-    %ul.user__experience
-      %li Experience
-      %li= @user.experience
-    %ul.user__sns
-      %li SNS
-      %li= markdown(@user.sns)
-    %ul.user__programminglang
-      %li Programmnig lang
-      %li= markdown(@user.programming_lang)
-  .user__main__right
-    %ul.user__pr
-      %li PR
-      %li= markdown(@user.pr)
+  .user__main
+    .user__main__left
+      .user__box__name
+        = @user.name
+      %ul.user__age
+        %li Age
+        %li= @user.age
+      %ul.user__jobs
+        %li Occupation
+        %li= @user.occupation
+      %ul.user__experience
+        %li Experience
+        %li= @user.experience
+      %ul.user__sns
+        %li SNS
+        %li= markdown(@user.sns)
+      %ul.user__programminglang
+        %li Programmnig lang
+        %li= markdown(@user.programming_lang)
+    .user__main__right
+      %ul.user__pr
+        %li PR
+        %li= markdown(@user.pr)
