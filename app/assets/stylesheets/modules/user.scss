@@ -1,14 +1,18 @@
-body{
+.account-page{
   background-image: url("backgroundimage.jpg");
   height: 1270px;
-  // width: 1920px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .account-page {
   height: 1270px;
+
   .account-page__inner {
     height: 50%;
     width: 30%;
@@ -25,11 +29,11 @@ body{
       font-size: 32px;
       margin-bottom: 10px;
 
-      .logUp__logIn--btn{
+      .logUp__logIn__logOut--btn{
         text-decoration: none;
         color: black;
       }
-      .logUp__logIn--btn:hover{
+      .logUp__logIn__logOut--btn:hover{
         color: #cecccc;
         transition-duration: 0.6s;
       }
