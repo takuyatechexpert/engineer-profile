@@ -13,8 +13,8 @@
     .main__form
       .main__form__title
         User search
-      .main__form__box
-        = form_with url: search_profiles_path, id: "test", local: true, method: :get do |f|
+      = form_with url: search_profiles_path, id: "test", local: true, method: :get do |f|
+        .main__form__box
           = f.text_field :keyword, placeholder: "type a keyword", class: "main__form__box__text"
           = f.submit "Search", class: "main__form__box__submit"
 
