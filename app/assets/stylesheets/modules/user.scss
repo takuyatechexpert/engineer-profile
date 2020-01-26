@@ -14,7 +14,7 @@
   height: 1150px;
 
   .account-page__inner {
-    height: 50%;
+    height: 60%;
     width: 30%;
     margin: 170px 68% 0 32%;
     padding: 60px 70px 60px;
@@ -60,7 +60,7 @@
     }
 
     .btn {
-      margin-top: 70px;
+      margin-top: 40px;
       color: #fff;
       background-color: #ccc;
       border-radius: 6px;
@@ -88,7 +88,7 @@
     margin: 0 auto;
 
     .field-label {
-      padding: 20px 0;
+      padding: 30px 0 20px;
       letter-spacing: 1px;
       font-size: 14px;
       font-weight: 200;
@@ -107,9 +107,11 @@
 
       #user_programming_lang{
         border: solid 1px gainsboro;
+        padding: 10px;
         }
       #user_pr{
       border: solid 1px gainsboro;
+      padding: 10px;
       }
     }
   }
@@ -123,7 +125,7 @@
             width: 60%;
             line-height: 50px;
             letter-spacing: 1px;
-            margin-top: 50px;
+            margin-top: 80px;
             color: #fff;
             background-color: #494949;
             border-radius: 6px;

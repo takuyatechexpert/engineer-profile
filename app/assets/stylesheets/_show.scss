@@ -60,7 +60,7 @@
   justify-content: center;
   margin-top: 20px;
 
-  .user__main__left{
+  &__left{
     // margin-left: 20px;
     .user__box__name{
       font-size: 2.2rem;
@@ -79,7 +79,7 @@
         padding: 4px 0 0 16px;
       }
   }
-  .user__main__right{
+  &__right{
     // background: #fafafa;
     // opacity: 0.75;
     // box-shadow: 1px  1px 5px 0px #cecece;
@@ -88,9 +88,7 @@
     margin-left: 170px;
     margin-right: 25px;
     width: 625px;
-    .user__pr{
-      // width: 20%;
-    }
+
     ul{
       padding-top: 6px;
     }

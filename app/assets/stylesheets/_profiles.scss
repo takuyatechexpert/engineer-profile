@@ -31,11 +31,11 @@ body{
   position: relative;
   z-index: 2;
 
-  .title__btn{
+  &__btn{
     color: $mainfontcolor;
     text-decoration: none;
  }
- .title__btn:hover{
+ &__btn:hover{
   @include animateBtn($white, 0.2s);
   }
 }
@@ -49,7 +49,7 @@ body{
       padding: 300px 0 0;
       width: 20%;
 
-      .side__menu__myPage{
+      &__myPage{
         padding-bottom: 10px;
       }
         .side__menu__myPage__btn,
@@ -62,6 +62,9 @@ body{
 
       :hover{
         @include animateBtn($white);
+      }
+      .user__logout{
+        padding-top: 50px;
       }
     }
 
@@ -82,21 +85,21 @@ body{
 
       .main__form__box{
 
-        .main__form__box__text{
+        &__text{
           font-size: 1.8rem;
           height: 50px;
           width: 80%;
           padding-left: 10px;
         }
         
-        .main__form__box__submit{
+        &__submit{
           background: #494949;
           color: white;
           font-size: 1.5rem;
           padding: 10px 20px;
           margin-left: 10px;
         }
-        .main__form__box__submit:hover{
+        &__submit:hover{
           background: $white;
           color: #2c2c2c;
           transition-duration: 0.2s;
@@ -107,6 +110,10 @@ body{
           font-size: 2.5rem;
           margin-top: 40px;
         }
+        &__list{
+          overflow: scroll;
+          height: 400px;
+        }
           &__name{
             font-size: 1.2rem;
             display: flex;
@@ -114,12 +121,12 @@ body{
             justify-content: space-between;
             width: 80%;
             padding: 10px 20px 2px 10px;
-
+            
             .main__users__details{
               color: black;
               text-decoration: none;
             }
-
+            
             .main__users__details:hover{
               @include animateBtn($white);
             }
