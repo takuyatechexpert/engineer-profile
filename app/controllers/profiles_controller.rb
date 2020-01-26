@@ -5,7 +5,7 @@ class ProfilesController < ApplicationController
   end
 
   def search
-    @users = User.search(params[:keyword]).where.not(id: current_user.id)
+    @users = User.search(params[:keyword]).where.not(id: current_user.id).order("created_at DESC")
   end
 
 end
