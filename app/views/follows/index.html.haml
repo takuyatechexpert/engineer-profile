@@ -1,10 +1,21 @@
 .profileMain
   .wapper
+    .main
+      %ul.side__menu
+        %li.side__menu__myPage
+          = link_to "My page", user_path(current_user.id), class: "side__menu__myPage__btn"
+        %li.side__menu__follow
+          = link_to "Follow", follows_path(current_user.id), class: "side__menu__follow__btn"
+        %li.side__menu__follower
+          = link_to "Follower", followers_path(current_user.id), class: "side__menu__follower__btn"
+        .user__logout
+          = link_to "Log out", destroy_user_session_path, method: :delete, class: 'user__logout__btn'
+
     .followTitle
       Follow list
-    .followTitle__main
-      - @users.followings.each do |user|
-        .main__users
-          = image_tag user.image.url, class: "main__users__image"
-          = link_to user.name, user_path(user.id), class: "main__users__name"
-          -# followingは自分がフォローしている人
+      .followTitle__main
+        - @users.followings.each do |user|
+          .main__users
+            = image_tag user.image.url, class: "main__users__image"
+            = link_to user.name, user_path(user.id), class: "main__users__name"
+            -# followingは自分がフォローしている人
