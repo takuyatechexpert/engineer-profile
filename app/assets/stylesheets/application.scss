@@ -1,6 +1,14 @@
 @import "reset";
+@import "mixin/mixin";
 @import "modules/user";
 @import "form";
 @import "profiles";
 @import "show";
 @import "follows";
+
+* {
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}

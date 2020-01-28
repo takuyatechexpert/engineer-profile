@@ -1,6 +1,6 @@
 .account-page{
   background-image: url("backgroundimage.jpg");
-  height: 1270px;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -13,10 +13,19 @@
 .account-page {
   height: 1150px;
 
+  .info{
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 440px;
+    left: 5%;
+  }
   .account-page__inner {
     height: 60%;
     width: 30%;
-    margin: 170px 68% 0 32%;
+    min-width:500px;
+    margin: 190px 68% 0 32%;
     padding: 60px 70px 60px;
     background-color: #fff;
     opacity: 0.85;
@@ -34,7 +43,7 @@
         color: black;
       }
       .logUp__logIn__logOut--btn:hover{
-        color: #cecccc;
+        color: $white;
         transition-duration: 0.6s;
       }
     }
@@ -91,10 +100,24 @@
       padding: 30px 0 20px;
       letter-spacing: 1px;
       font-size: 14px;
-      font-weight: 200;
+      font-weight: bold;
 
       i {
         font-size: 11px;
+      }
+      .imageFieldLabel{
+        display: block;
+        background-image: url(default.png);
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow:hidden;
+      }
+      .imageFieldLabel:hover{
+        box-shadow: 2px 2px 6px 0 #000000;
+        transition-duration: 0.5s;
       }
     }
 
@@ -131,7 +154,7 @@
             border-radius: 6px;
           }
           input:hover {
-            background    : #2c2c2c;
+            background: #2c2c2c;
           }
         }
 
