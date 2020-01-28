@@ -3,7 +3,8 @@
     .followTitle
       Follow list
     .followTitle__main
-      - @users.relationships.each do |relationships|
-        .main__users__name
-          = relationships.follow.name
-          = link_to "Details", user_path(relationships.follow.id), class: "main__users__details"
+      - @users.followings.each do |user|
+        .main__users
+          = image_tag user.image.url, class: "main__users__image"
+          = link_to user.name, user_path(user.id), class: "main__users__name"
+          -# followingは自分がフォローしている人

@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .user__header{
   display: flex;
   align-items: flex-end;
@@ -17,39 +13,28 @@
     .followOrEdit__btn{
       font-size: 2rem;
       padding:0 7% 15px 0px;
+
       .user__edit__btn{
-        color: white;
-        background: #494949;
-        text-decoration: none;
-        border: solid 1px black;
+        @include showBtn;
         padding: 0 50px;
         border-radius: 5px;
         letter-spacing: 2px;
       }
       .user__edit__btn:hover{
-        color: black;
-        background: white;
-        transition-duration: 0.3s;
+        @include showBtnHover;
       }
       
         .follow-now,.follows{
-          color: white;
-          background: #494949;
-          text-decoration: none;
-          border: solid 1px black;
+          @include showBtn;
           width: 250px;
           border-radius: 5px;
           letter-spacing: 1px;
         }
         .follows:hover{
-          color: black;
-          background: white;
-          transition-duration: 0.3s;
+          @include showBtnHover;
         }
         .follow-now:hover{
-          color: black;
-          background: white;
-          transition-duration: 0.3s;
+          @include showBtnHover;
         }
     }
   }
@@ -61,14 +46,12 @@
   margin-top: 20px;
 
   &__left{
-    // margin-left: 20px;
+    padding: 0 30px;
     .user__box__name{
       font-size: 2.2rem;
       margin-top: 10px;
     }
-    // background: #fafafa;
-    // background: rgb(199, 199, 199);
-    // margin-left: 0.5%;
+
     ul{
       padding-top: 6px;
     }
@@ -80,11 +63,7 @@
       }
   }
   &__right{
-    // background: #fafafa;
-    // opacity: 0.75;
-    // box-shadow: 1px  1px 5px 0px #cecece;
     margin-top: 50px;
-    // padding: 20px;
     margin-left: 170px;
     margin-right: 25px;
     width: 625px;

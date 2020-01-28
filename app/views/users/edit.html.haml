@@ -6,7 +6,7 @@
       = form_for(current_user) do |f|
         .field
           .field-label
-            = f.label :image
+            = f.label :image,"-", class: "imageFieldLabel"
           .field-input
             = f.file_field :image, class: "imageField"
         .field

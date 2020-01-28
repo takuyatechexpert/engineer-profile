@@ -1,10 +1,11 @@
 .profileMain
   .wapper
     .followTitle
-      Follow list
+      Follower list
       .followTitle__main
         - @users.followers.each do |user|
-          .main__users__name
-            = user.name
-            = link_to "details", user_path(user.id), class: "main__users__details"
+          .main__users
+            = image_tag user.image.url, class: "main__users__image"
+            = link_to user.name, user_path(user.id), class: "main__users__name"
             -# 架空のテーブルfollowers(フォローしてくれてる人)の情報をuserテーブル経由で取り出している
+            -# folllowersは自分をフォローしてくれてる人

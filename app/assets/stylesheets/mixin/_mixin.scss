@@ -1,0 +1,20 @@
+$white: #cecccc;
+$mainfontcolor: black;
+
+@mixin animateBtn($color,$duration: 0.3s) {
+  color: $color;
+  transition-duration: $duration;
+}
+
+@mixin showBtn{
+  color: white;
+  background: #494949;
+  text-decoration: none;
+  border: solid 1px black;
+}
+
+@mixin showBtnHover {
+  color: black;
+  background: white;
+  transition-duration: 0.3s;
+}
