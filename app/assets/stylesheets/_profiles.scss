@@ -31,6 +31,7 @@
     
     .side__menu{
       font-size: 2.5rem;
+      margin-left: 5%;
       padding: 300px 0 0;
 
       &__myPage{
@@ -97,7 +98,8 @@
         }
         &__list{
           overflow: scroll;
-          height: 400px;
+          height: 370px;
+          margin-bottom: 30px;
         }
           &__list__row{
             display: flex;
@@ -123,4 +125,3 @@
       }
     }
   }
-
