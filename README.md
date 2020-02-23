@@ -4,7 +4,7 @@
 エンジニアのためのサイト
 
 ## ユーザー検索機能
-[![Image from Gyazo](https://i.gyazo.com/177b603d304cc4b272c95842792541f4.gif)](https://gyazo.com/177b603d304cc4b272c95842792541f4)
+[![Image from Gyazo](https://i.gyazo.com/0342424af1ed118aa8f16f14dac2cd7b.gif)](https://gyazo.com/0342424af1ed118aa8f16f14dac2cd7b)
 
 ## フォロー機能
 [![Image from Gyazo](https://i.gyazo.com/b863afe38eff215e2dc494697aef45c6.gif)](https://gyazo.com/b863afe38eff215e2dc494697aef45c6)
