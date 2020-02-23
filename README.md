@@ -4,10 +4,10 @@
 エンジニアのためのサイト
 
 ## ユーザー検索機能
-![ユーザー検索機能](https://gyazo.com/bdaab608f18c387a9825a5f645df8605)
+[![Image from Gyazo](https://i.gyazo.com/177b603d304cc4b272c95842792541f4.gif)](https://gyazo.com/177b603d304cc4b272c95842792541f4)
 
 ## フォロー機能
-![フォロー機能](https://gyazo.com/fc5c1baa4d2e36ac7b27f4207269755e)
+[![Image from Gyazo](https://i.gyazo.com/b863afe38eff215e2dc494697aef45c6.gif)](https://gyazo.com/b863afe38eff215e2dc494697aef45c6)
 
 ## markdown記法
 PR,使用言語にはmarkdown記法が使用できます
