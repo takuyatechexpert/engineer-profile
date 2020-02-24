@@ -1,5 +1,5 @@
 .account-page{
-  background-image: url("backgroundimage.jpg");
+  background-image: image-url("backgroundimage.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -107,7 +107,7 @@
       }
       .imageFieldLabel{
         display: block;
-        background-image: url(default.png);
+        background-image: image-url(default.png);
         background-size: cover;
         background-position: center;
         height: 100px;
