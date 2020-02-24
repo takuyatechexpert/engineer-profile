@@ -107,7 +107,7 @@
       }
       .imageFieldLabel{
         display: block;
-        background-image: image-url(default.png);
+        background-image: image-url("default.png");
         background-size: cover;
         background-position: center;
         height: 100px;
