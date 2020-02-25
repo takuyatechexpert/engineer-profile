@@ -1,0 +1,9 @@
+%ul.side__menu
+  %li.side__menu__myPage
+    = link_to "My page", user_path(current_user.id), class: "side__menu__myPage__btn"
+  %li.side__menu__follow
+    = link_to "Follow", follows_path(current_user.id), class: "side__menu__follow__btn"
+  %li.side__menu__follower
+    = link_to "Follower", followers_path(current_user.id), class: "side__menu__follower__btn"
+  .user__logout
+    = link_to "Log out", destroy_user_session_path, method: :delete, class: 'user__logout__btn'
