@@ -138,6 +138,29 @@
       }
     }
   }
+        .guest{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .guest__btn{
+            font-size: 1.2rem;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+            letter-spacing: 1px;
+            margin-top: 40px;
+            color: #fff;
+            background-color: #ff8800;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+          }
+          .guest__btn:hover {
+            background: #b84d1c;
+          }
+        }
+        
         .actions{
           display: flex;
           align-items: center;
@@ -148,7 +171,7 @@
             width: 60%;
             line-height: 50px;
             letter-spacing: 1px;
-            margin-top: 80px;
+            margin-top: 40px;
             color: #fff;
             background-color: #494949;
             border-radius: 6px;

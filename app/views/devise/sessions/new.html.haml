@@ -24,3 +24,5 @@
             = f.submit "Log in"
     .account-page__signUp 
       = render "devise/shared/links"
+    .guest
+      = link_to 'Guest Account', users_guest_sign_in_path, method: :post, class: "guest__btn"
