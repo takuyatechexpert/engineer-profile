@@ -1,15 +1,22 @@
 # Engineer Profile
+http://18.178.126.210/
 
-エンジニアとエンジニアを繋ぐ
-エンジニアのためのサイト
+### エンジニアとエンジニアを繋ぐ
+### エンジニアのためのサイト
 
-## ユーザー検索機能
+### ログインページにguest accountボタンを設置しています
+### guest accountボタンよりログインして機能確認お願いします！
+
+## ○ログインページ ゲストアカウントでログインボタン
+[![Image from Gyazo](https://i.gyazo.com/c347971c5bdf3d04fe0ee1e5bb335db9.jpg)](https://gyazo.com/c347971c5bdf3d04fe0ee1e5bb335db9)
+
+## ○ユーザー検索機能
 [![Image from Gyazo](https://i.gyazo.com/0342424af1ed118aa8f16f14dac2cd7b.gif)](https://gyazo.com/0342424af1ed118aa8f16f14dac2cd7b)
 
-## フォロー機能
+## ○フォロー機能
 [![Image from Gyazo](https://i.gyazo.com/b863afe38eff215e2dc494697aef45c6.gif)](https://gyazo.com/b863afe38eff215e2dc494697aef45c6)
 
-## markdown記法
+## ○markdown記法
 PR,使用言語にはmarkdown記法が使用できます
 
 [![Image from Gyazo](https://i.gyazo.com/2868bc434bfce2037aad7db18c13aecb.jpg)](https://gyazo.com/2868bc434bfce2037aad7db18c13aecb)
