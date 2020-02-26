@@ -4,7 +4,7 @@ class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
 
   def new_guest
-    user = User.find(23)
+    user = User.find(3)
     user.update(name: 'ゲストユーザー', email: 'guestuser@example.com', age: '100',
                 occupation: 'フリーランス', experience: '100',sns: 'guestSNS',
                 programming_lang: '# markdown記法が使えます',
