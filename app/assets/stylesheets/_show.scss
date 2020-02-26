@@ -1,8 +1,6 @@
 .user__header{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  margin-top: 220px;
+  width: 60%;
+  margin: 0 0 220px 150px;
       .user__box__picture--design{
         height: 350px;
         width: 350px;
@@ -13,6 +11,11 @@
     .followOrEdit__btn{
       font-size: 2rem;
       padding:0 7% 15px 0px;
+
+      .follow__btn,
+      .user__edit{
+        text-align: right;
+      }
 
       .user__edit__btn{
         @include showBtn;

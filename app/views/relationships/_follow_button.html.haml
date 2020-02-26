@@ -1,15 +1,16 @@
 - unless current_user == user
   - if current_user.following?(user)
-    = form_for(current_user.relationships.find_by(follow_id: user.id), html: { method: :delete }) do |f|
-      = f.hidden_field :follower, value: current_user.name
-      = f.hidden_field :follow_id, value: user.id
-    
-      = f.submit 'Following', class: 'follow-now'
+    .follow__btn
+      = form_for(current_user.relationships.find_by(follow_id: user.id), html: { method: :delete }) do |f|
+        = f.hidden_field :follower, value: current_user.name
+        = f.hidden_field :follow_id, value: user.id
+        = f.submit 'Following', class: 'follow-now'
   - else
-    = form_for(current_user.relationships.build) do |f|
-      = f.hidden_field :follow_id, value: user.id
-      = f.hidden_field :follower, value: current_user.name
-      = f.submit 'Follow', class: 'follows'
+    .follow__btn
+      = form_for(current_user.relationships.build) do |f|
+        = f.hidden_field :follow_id, value: user.id
+        = f.hidden_field :follower, value: current_user.name
+        = f.submit 'Follow', class: 'follows'
 - else
   .user__edit
     = link_to "Edit", edit_user_path, class: 'user__edit__btn'
