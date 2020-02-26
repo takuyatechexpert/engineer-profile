@@ -24,15 +24,6 @@ class User < ApplicationRecord
     self.followings.include?(other_user)
   end
 
-  # def self.search(search)
-    # return User.all unless search
-    #   keywords = search.split(/[[:blank:]]+/)
-    #   # @users = []
-    #   keywords.each do |search|
-    #   next search == ""
-    #   User.where('name LIKE(?) OR age LIKE(?) OR occupation LIKE(?) OR experience LIKE(?) OR programming_lang LIKE(?) OR pr LIKE(?)', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%")
-    #   end
-  # end
   
   mount_uploader :image, ImageUploader
 end
