@@ -11,7 +11,9 @@ http://18.178.126.210/
 [![Image from Gyazo](https://i.gyazo.com/c347971c5bdf3d04fe0ee1e5bb335db9.jpg)](https://gyazo.com/c347971c5bdf3d04fe0ee1e5bb335db9)
 
 ## ○ユーザー検索機能
-[![Image from Gyazo](https://i.gyazo.com/0342424af1ed118aa8f16f14dac2cd7b.gif)](https://gyazo.com/0342424af1ed118aa8f16f14dac2cd7b)
+jqueyを使用して検索結果を表示させています
+検索ワードを入力したと同時に検索結果が表示されます
+[![Image from Gyazo](https://i.gyazo.com/2a9724a35e1cc6c7440f2cfe65468546.gif)](https://gyazo.com/2a9724a35e1cc6c7440f2cfe65468546)
 
 ## ○フォロー機能
 [![Image from Gyazo](https://i.gyazo.com/b863afe38eff215e2dc494697aef45c6.gif)](https://gyazo.com/b863afe38eff215e2dc494697aef45c6)
