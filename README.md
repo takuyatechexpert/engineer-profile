@@ -8,7 +8,7 @@ http://18.178.126.210/
 ### guest accountボタンよりログインして機能確認お願いします！
 
 ## ○ログインページ ゲストアカウントでログインボタン
-[![Image from Gyazo](https://i.gyazo.com/c347971c5bdf3d04fe0ee1e5bb335db9.jpg)](https://gyazo.com/c347971c5bdf3d04fe0ee1e5bb335db9)
+[![Image from Gyazo](https://i.gyazo.com/e6b52e003d26203e4ee0bcdec2782824.jpg)](https://gyazo.com/e6b52e003d26203e4ee0bcdec2782824)
 
 ## ○ユーザー検索機能
 jqueyを使用して検索結果を表示させています
