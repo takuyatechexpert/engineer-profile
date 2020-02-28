@@ -12,20 +12,18 @@
 
 .account-page {
   height: 1150px;
+  display: flex;
 
   .info{
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 2px;
-    position: absolute;
-    top: 440px;
-    left: 5%;
+    margin: 300px 0 0 10%;
   }
   .account-page__inner {
     height: 60%;
-    width: 30%;
-    min-width:500px;
-    margin: 190px 68% 0 32%;
+    min-width:600px;
+    margin: 215px 82% 0 13%;
     padding: 60px 70px 60px;
     background-color: #fff;
     opacity: 0.85;
