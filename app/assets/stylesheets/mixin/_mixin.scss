@@ -18,3 +18,9 @@ $mainfontcolor: black;
   background: white;
   transition-duration: 0.3s;
 }
+
+@mixin flexbox($justify-content: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+}

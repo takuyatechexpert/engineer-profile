@@ -16,14 +16,14 @@
 
   .info{
     color: white;
-    font-size: 3rem;
+    font-size: 3.7rem;
     letter-spacing: 2px;
-    margin: 300px 0 0 10%;
+    margin: 300px 0 0 12%;
   }
   .account-page__inner {
     height: 60%;
-    min-width:600px;
-    margin: 215px 82% 0 13%;
+    min-width:550px;
+    margin: 215px auto 0;
     padding: 60px 70px 60px;
     background-color: #fff;
     opacity: 0.85;
@@ -50,9 +50,8 @@
   .account-page__signUp {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($justify-content: center);
+
     h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
@@ -137,10 +136,7 @@
     }
   }
         .guest{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
+          @include flexbox($justify-content: center);
           .guest__btn{
             font-size: 1.2rem;
             height: 50px;
@@ -160,9 +156,7 @@
         }
         
         .actions{
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flexbox($justify-content: center);
           input {
             font-size: 1.2rem;
             height: 50px;
