@@ -1,6 +1,6 @@
 .user__header{
   width: 60%;
-  margin: 0 0 220px 150px;
+  margin: 0 0 220px 120px;
       .user__box__picture--design{
         height: 350px;
         width: 350px;
@@ -44,7 +44,7 @@
 .user__main{
   font-size: 1.5rem;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 
   &__left{
@@ -67,7 +67,7 @@
   }
   &__right{
     margin-top: 50px;
-    margin-left: 170px;
+    margin-left: 30px;
     margin-right: 25px;
     width: 625px;
 
