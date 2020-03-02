@@ -15,11 +15,6 @@ class ProfilesController < ApplicationController
         end
     else
       @users = User.where.not(id: current_user.id).order("created_at DESC")
-
-      respond_to do |format|
-        format.html
-        format.json
-      end
     end
   end
 

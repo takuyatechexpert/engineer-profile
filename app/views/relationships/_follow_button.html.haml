@@ -1,13 +1,13 @@
 - unless current_user == user
   - if current_user.following?(user)
     .follow__btn
-      = form_for(current_user.relationships.find_by(follow_id: user.id), html: { method: :delete }) do |f|
+      = form_for(current_user.relationships.find_by(follow_id: user.id), html: { method: :delete }, remote: true) do |f|
         = f.hidden_field :follower, value: current_user.name
         = f.hidden_field :follow_id, value: user.id
         = f.submit 'Following', class: 'follow-now'
   - else
     .follow__btn
-      = form_for(current_user.relationships.build) do |f|
+      = form_for(current_user.relationships.build, remote: true) do |f|
         = f.hidden_field :follow_id, value: user.id
         = f.hidden_field :follower, value: current_user.name
         = f.submit 'Follow', class: 'follows'

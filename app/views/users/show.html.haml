@@ -6,7 +6,7 @@
       .user__box
         .user__box__picture
           = image_tag @user.image.url, class: "user__box__picture--design"
-      .followOrEdit__btn
+      .followOrEdit__btn#follow__form
         = render "relationships/follow_button", user: @user
 
       .user__main
