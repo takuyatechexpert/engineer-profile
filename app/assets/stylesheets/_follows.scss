@@ -1,13 +1,16 @@
 .followTitle{
-  margin-top: 310px;
   font-size: 2.5rem;
+  margin-top: 165px;
   margin-left: 17%;
   text-align: center;
   width: 30%;
 }
 .followTitle__main{
   font-size: 1.2rem;
-  .main__users{
+  height: 540px;
+  width: 550px;
+  overflow: scroll;
+  &__users{
     display: flex;
     align-items: center;
     padding: 10px 3% 2px 0;
@@ -28,4 +31,8 @@
       @include animateBtn($white);
     }
   }
+}
+
+.space{
+  height: 339px;
 }

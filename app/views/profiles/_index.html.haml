@@ -1,16 +1,22 @@
 .profileMain
+  .main__form
+    .main__form__title
+      User search
+    = form_with url: profiles_path,id: "searchForm", local: true, method: :get do |f|
+      .main__form__box
+        = f.text_field :keyword, placeholder: "Please enter a search keyword", class: "main__form__box__text"
   .main
     =render "shared/side_var"
-    .main__form
-      .main__form__title
-        User search
-      = form_with url: profiles_path,id: "searchForm", local: true, method: :get do |f|
-        .main__form__box
-          = f.text_field :keyword, placeholder: "Please enter a search keyword", class: "main__form__box__text"
 
-      .main__users
-        .main__users__list
-          - @users.each do |user|
+    .main__users
+      .main__users__title
+        User list
+      .main__users__list
+        - @users.each do |user|
+          = link_to user_path(user), class: "main__users__list--link" do
             .main__users__list__row
-              = image_tag user.image.url, class: "main__users__list__row__image"
-              = link_to user.name, user_path(user), class: "main__users__list__row__name"
+              %ul
+                %li
+                  = image_tag user.image.url, class: "main__users__list__row__image"
+                %li.main__users__list__row__name
+                  = user.name
