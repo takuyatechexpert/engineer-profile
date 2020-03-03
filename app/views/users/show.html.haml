@@ -1,16 +1,16 @@
 .profileMain
+  .space
   .main
     =render "shared/side_var"
 
-    .user__header
-      .user__box
-        .user__box__picture
-          = image_tag @user.image.url, class: "user__box__picture--design"
-      .followOrEdit__btn#follow__form
-        = render "relationships/follow_button", user: @user
-
-      .user__main
-        .user__main__left
+    .user__main
+      .user__main__top
+        .user__main__picture
+          = image_tag @user.image.url, class: "user__main__picture--design"
+        .followOrEdit__btn#follow__form
+          = render "relationships/follow_button", user: @user
+      .user__main__bottom
+        .user__main__bottom__left
           .user__box__name
             = @user.name
           %ul.user__age
@@ -28,7 +28,7 @@
           %ul.user__programminglang
             %li Programmnig lang
             %li= markdown(@user.programming_lang)
-        .user__main__right
+        .user__main__bottom__right
           %ul.user__pr
             %li PR
             %li= markdown(@user.pr)
