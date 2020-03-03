@@ -2,10 +2,17 @@ $(document).on('turbolinks:load', function(){
 
   function addUser(user) {
     let html = `
-    <div class="main__users__list__row">
-    <img class="main__users__list__row__image" src= ${user.image}>
-    <a class="main__users__list__row__name" href="/users/${user.id}">${user.name}</a>
-    </div>
+    <a class="main__users__list--link" href="/users/${user.id}"><div class="main__users__list__row">
+        <ul>
+          <li>
+          <img class="main__users__list__row__image" src=${user.image}>
+          </li>
+          <li class="main__users__list__row__name">
+          ${user.name}
+          </li>
+        </ul>
+      </div>
+    </a>
     `;
     $(".main__users__list").append(html);
   }
