@@ -1,21 +1,13 @@
-.user__header{
-  width: 60%;
-  margin: 0 0 220px 120px;
-      .user__box__picture--design{
-        height: 350px;
-        width: 350px;
+      .user__main__picture--design{
+        height: 220px;
+        width: 220px;
         border-radius: 50%;
         object-fit: cover;
       }
 
     .followOrEdit__btn{
       font-size: 2rem;
-      padding:0 7% 15px 0px;
-
-      .follow__btn,
-      .user__edit{
-        text-align: right;
-      }
+      padding:0 130px 15px;
 
       .user__edit__btn{
         @include showBtn;
@@ -40,42 +32,47 @@
           @include showBtnHover;
         }
     }
-  } 
-.user__main{
-  font-size: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    .user__main{
+      font-size: 1.5rem;
+      width: 60%;
+      margin-left: 9%;
 
-  &__left{
-    padding: 0 30px;
-    .user__box__name{
-      font-size: 2.2rem;
-      margin-top: 10px;
-    }
+      &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      &__bottom{
+          display: flex;
+          flex-wrap: wrap;
+        &__left{
+          padding: 0 30px;
+          .user__box__name{
+            font-size: 2.2rem;
+            margin-top: 10px;
+          }
 
-    ul{
-      padding-top: 6px;
-      margin-bottom: 30px;
-    }
-      li{
-        font-size: 1.3rem;
-      }
-      li + li{
-        padding: 4px 0 0 16px;
-      }
-  }
-  &__right{
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 25px;
-    width: 625px;
+          ul{
+            padding-top: 6px;
+            margin-bottom: 30px;
+          }
+            li{
+              font-size: 1.3rem;
+            }
+            li + li{
+              padding: 4px 0 0 16px;
+            }
+        }
+        &__right{
+          margin: 50px 30px 30px 25px;
+          width: 625px;
 
-    ul{
-      padding-top: 6px;
-    }
-      li{
-        font-size: 1.3rem;
+          ul{
+            padding-top: 6px;
+          }
+            li{
+              font-size: 1.3rem;
+            }
+        }
       }
-  }
-}
+    }

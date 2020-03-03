@@ -1,11 +1,18 @@
 .profileMain
+  .space
   .main
     =render "shared/side_var"
     .followTitle
       Follow list
       .followTitle__main
+        -# followingは自分がフォローしている人
         - @users.followings.each do |user|
-          .main__users
+          .followTitle__main__users
             = image_tag user.image.url, class: "main__users__image"
             = link_to user.name, user_path(user.id), class: "main__users__name"
-            -# followingは自分がフォローしている人
+          -# .main__users__list__row
+          -#   %ul
+          -#     %li
+          -#       = image_tag user.image.url, class: "main__users__list__row__image"
+          -#     %li.main__users__list__row__name
+          -#       = user.name
