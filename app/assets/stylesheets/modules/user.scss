@@ -105,11 +105,13 @@
       i {
         font-size: 11px;
       }
+      .preview,
       .imageFieldLabel{
         display: block;
         background-image: image-url("default.png");
         background-size: cover;
         background-position: center;
+        object-fit: cover;
         height: 120px;
         width: 120px;
         border-radius: 50%;
@@ -117,7 +119,7 @@
         margin: 0 auto;
       }
       .imageFieldLabel:hover{
-        box-shadow: 2px 2px 6px 0 #000000;
+        box-shadow: 0 1px 4px 0 #000000;
         transition-duration: 0.5s;
       }
     }
