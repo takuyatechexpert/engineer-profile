@@ -11,20 +11,23 @@
 }
 
 .account-page {
-  height: 1150px;
+  height: 990px;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
   .info{
     color: white;
     font-size: 3.7rem;
     letter-spacing: 2px;
-    margin: 300px 0 0 12%;
+    padding: 0 10px 160px 0;
   }
   .account-page__inner {
-    height: 60%;
+    height: 66%;
     min-width:550px;
-    margin: 215px auto 0;
-    padding: 60px 70px 60px;
+    // margin: 215px auto 0;
+    padding: 40px 60px;
     background-color: #fff;
     opacity: 0.85;
     border: 1px solid #ddd;
@@ -94,7 +97,7 @@
     margin: 0 auto;
 
     .field-label {
-      padding: 30px 0 20px;
+      padding: 20px 0 15px;
       letter-spacing: 1px;
       font-size: 14px;
       font-weight: bold;
@@ -107,10 +110,11 @@
         background-image: image-url("default.png");
         background-size: cover;
         background-position: center;
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
         border-radius: 50%;
         overflow:hidden;
+        margin: 0 auto;
       }
       .imageFieldLabel:hover{
         box-shadow: 2px 2px 6px 0 #000000;
