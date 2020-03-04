@@ -2,7 +2,7 @@
   .main__form
     .main__form__title
       User search
-    = form_with url: profiles_path,id: "searchForm", local: true, method: :get do |f|
+    = form_with url: profiles_path,id: "searchForm", local: false, method: :get do |f|
       .main__form__box
         = f.text_field :keyword, placeholder: "Please enter a search keyword", class: "main__form__box__text"
   .main
