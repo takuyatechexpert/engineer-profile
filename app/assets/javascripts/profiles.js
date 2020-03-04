@@ -52,4 +52,13 @@ $(document).on('turbolinks:load', function(){
       alert("通信エラーです。ユーザーが表示できません。");
     });
   });
+  $( '#keyword' ).keypress( function (e) {
+    if ( e.which == 13 ) {
+    // ここに処理を書く
+  
+  // スマホのキーボードを閉じる
+    $("#keyword").blur();
+     return false;
+  }
+  })
 });
