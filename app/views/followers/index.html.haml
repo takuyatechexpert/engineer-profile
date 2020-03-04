@@ -4,10 +4,14 @@
     =render "shared/side_var"
     .followTitle
       Follower list
-      .followTitle__main
+      .main__users__list
         - @users.followers.each do |user|
-          .main__users
-            = image_tag user.image.url, class: "main__users__image"
-            = link_to user.name, user_path(user.id), class: "main__users__name"
-            -# 架空のテーブルfollowers(フォローしてくれてる人)の情報をuserテーブル経由で取り出している
-            -# folllowersは自分をフォローしてくれてる人
+          -# 架空のテーブルfollowers(フォローしてくれてる人)の情報をuserテーブル経由で取り出している
+          -# folllowersは自分をフォローしてくれてる人
+          = link_to user_path(user), class: "main__users__list--link" do
+            .main__users__list__row
+              %ul
+                %li
+                  = image_tag user.image.url, class: "main__users__list__row__image"
+                %li.main__users__list__row__name
+                  = user.name

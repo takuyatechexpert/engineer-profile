@@ -1,6 +1,6 @@
 .profileMain{
   background-image: image-url("backgroundimage.jpg");
-  height: 500px;
+  height: 450px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -53,7 +53,7 @@
     
     .side__menu{
       font-size: 2.5rem;
-      margin-top: 200px;
+      margin-top: 110px;
       margin-left:12%;
       
       &__myPage{
@@ -81,7 +81,7 @@
     }
     
     .main__users{
-      margin-top: 200px;
+      margin-top: 130px;
       margin-left: 4%;
       width: 58%;
       &__title{
@@ -94,7 +94,7 @@
         flex-wrap: wrap;
         align-items: center;
         overflow: scroll;
-        height: 520px;
+        height: 447px;
         margin-bottom: 30px;
       }
 
@@ -114,11 +114,11 @@
           margin: 5px;
           overflow: hidden;
           &__image{
-            height: 120px;
-            width: 120px;
+            height: 135px;
+            width: 135px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 15px 0;
+            margin: 15px 0 0;
           }
           &__name{
             display: block;
