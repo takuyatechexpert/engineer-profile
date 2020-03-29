@@ -231,3 +231,18 @@
 .imageField{
   display: none;
 } 
+
+.required{
+  display: inline-block;
+  background: red;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+.any{
+  display: inline-block;
+  background: #494949;
+  color: $white;
+  border-radius: 6px;
+  padding: 0 5px;
+}
