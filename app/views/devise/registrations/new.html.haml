@@ -15,52 +15,72 @@
         .field
           .field-label
             = f.label :name
+            .required
+              必須
           .field-input
             = f.text_field :name, placeholder: "please enter", autofocus: true
         .field
           .field-label
             = f.label :email
+            .required
+              必須
           .field-input
             = f.email_field :email, placeholder: "please enter"
         .field
           .field-label
             = f.label :age
+            .any
+              任意
           .field-input
             = f.text_field :age, placeholder: "please enter"
         .field
           .field-label
             = f.label :occupation
+            .any
+              任意
           .field-input
             = f.text_field :occupation, placeholder: "please enter"
         .field
           .field-label
             = f.label :experience
+            .any
+              任意
           .field-input
             = f.text_field :experience, placeholder: "please enter"
         .field
           .field-label
             = f.label :sns, "SNS"
+            .any
+              任意
           .field-input
             = f.text_field :sns, placeholder: "please enter"
         .field
           .field-label
             = f.label :programming_lang, "Programmnig Lang"
+            .any
+              任意
           .field-input
             = f.text_area :programming_lang, rows: 10, cols: 51, placeholder: "please enter\nマークダウン記法が使えます"
         .field
           .field-label
             = f.label :pr, "PR"
+            .any
+              任意
           .field-input
             = f.text_area :pr, rows: 10, cols: 51, placeholder: "please enter\nマークダウン記法が使えます"
         .field
           .field-label
             = f.label :password
             %i (英数字8文字以上)
+            .required
+              必須
           .field-input
             = f.password_field :password, placeholder: "please enter", autocomplete: "off"
         .field
           .field-label
             = f.label :password_confirmation
+            .required
+              必須
           .field-input
             = f.password_field :password_confirmation, placeholder: "please enter", autocomplete: "off"
         .actions
