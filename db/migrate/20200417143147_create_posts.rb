@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :comment,       null: true
       t.string :image,         null: false
       t.string :url
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

@@ -7,6 +7,7 @@ devise_for :users, controllers: {
 
 root "profiles#index"
 
+  resources :posts, only: [:new, :create, :update, :destroy, :edit]
   resources :follows, only: :index
   resources :followers, only: :index
   resources :users, only: [:edit, :update, :show]
