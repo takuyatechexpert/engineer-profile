@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
     create_table :posts do |t|
 
       t.string :title,         null: false
-      t.string :content,       null: true
+      t.string :comment,       null: true
       t.string :image,         null: false
       t.string :url
 
