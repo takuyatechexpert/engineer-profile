@@ -1,0 +1,21 @@
+#account-page.account-page
+  .NewPost
+    New Post
+
+  .NewPost__form
+    = form_with model: @post, local: true do |f|
+      .NewPost__form--title
+        Title
+        = f.text_field :title
+      .NewPost__form--comment
+        Comment
+        = f.text_field :comment
+      .NewPost__form--imege
+        Image
+        = f.text_field :image
+      .NewPost__form--url
+        URL
+        = f.text_field :url
+      .NewPost__form--submit
+        = f.submit "Send"
+        = link_to "back", :back

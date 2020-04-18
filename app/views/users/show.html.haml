@@ -32,3 +32,19 @@
           %ul.user__pr
             %li PR
             %li= markdown(@user.pr)
+
+      .posts
+        portfolio
+        .posts__form
+          = link_to "New Post", new_post_path
+
+        .posts__works
+          - @user.posts.each do |post|
+            .posts__works__image
+              = post.image
+            .posts__works__title
+              = post.title
+            .posts__works__comment
+              = post.comment
+            .posts__works__url
+              = post.url
