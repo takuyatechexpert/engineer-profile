@@ -38,13 +38,15 @@
         .posts__form
           = link_to "New Post", new_post_path
 
-        .posts__works
+        .posts__list
           - @user.posts.each do |post|
-            .posts__works__image
-              = post.image
-            .posts__works__title
-              = post.title
-            .posts__works__comment
-              = post.comment
-            .posts__works__url
-              = post.url
+            .posts__work
+              = link_to "Edit", edit_post_path(post.id)
+              .posts__work--image
+                = image_tag post.image.url
+              .posts__work--title
+                = post.title
+              .posts__work--comment
+                = post.comment
+              .posts__work--url
+                = post.url
