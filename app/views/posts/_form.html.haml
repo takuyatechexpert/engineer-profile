@@ -1,0 +1,17 @@
+.NewOrEditPost__form
+  = form_with model: @post, local: true do |f|
+    .NewOrEditPost__form--title
+      Title
+      = f.text_field :title
+    .NewOrEditPost__form--comment
+      Comment
+      = f.text_field :comment
+    .NewOrEditPost__form--imege
+      Image
+      = f.file_field :image
+    .NewOrEditPost__form--url
+      URL
+      = f.text_field :url
+    .NewOrEditPost__form--submit
+      = f.submit "Send"
+      = link_to "back", :back
