@@ -41,7 +41,11 @@
         .posts__list
           - @user.posts.each do |post|
             .posts__work
-              = link_to "Edit", edit_post_path(post.id)
+              %ul
+                %li
+                  = link_to "Edit", edit_post_path(post.id)
+                %li
+                  = link_to "Delete", "post_path", method: :delete
               .posts__work--image
                 = image_tag post.image.url
               .posts__work--title
