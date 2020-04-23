@@ -34,23 +34,26 @@
             %li= markdown(@user.pr)
 
       .posts
-        portfolio
+        .posts__title
+          portfolio
         .posts__form
-          = link_to "New Post", new_post_path
+          = link_to "New Post", new_post_path, class: "new__post__btn"
 
         .posts__list
           - @user.posts.each do |post|
-            .posts__work
-              %ul
-                %li
-                  = link_to "Edit", edit_post_path(post.id)
-                %li
-                  = link_to "Delete", post_path(post.id), method: :delete
-              .posts__work--image
-                = image_tag post.image.url
-              .posts__work--title
+            .posts__list__card{style: "background-image: url( #{post.image} );"}
+
+              .posts__list__card--work 
+                = image_tag "arrow_top.png", class: "posts__list__card--work--arrow"
+                %ul
+                  %li
+                    = link_to "Edit", edit_post_path(post.id)
+                  %li
+                    = link_to "Delete", post_path(post.id), method: :delete
+
+              .posts__list__card--title
                 = post.title
-              .posts__work--comment
+              .posts__list__card--comment
                 = post.comment
-              .posts__work--url
-                = post.url
+              .posts__list__card--url
+                = link_to "#{post.url}", "#{post.url}", target: :_blank, class: "url__btn"
