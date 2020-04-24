@@ -41,8 +41,9 @@
 
         .posts__list
           - @user.posts.each do |post|
-            .posts__list__card{style: "background-image: url( #{post.image} );"}
-
+            .posts__list__card
+              .posts__list__card--image
+                = image_tag post.image.url
               .posts__list__card--work 
                 = image_tag "arrow_top.png", class: "posts__list__card--work--arrow"
                 %ul
