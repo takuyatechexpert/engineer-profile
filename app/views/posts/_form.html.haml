@@ -1,17 +1,31 @@
-.NewOrEditPost__form
-  = form_with model: @post, local: true do |f|
-    .NewOrEditPost__form--title
-      Title
-      = f.text_field :title
-    .NewOrEditPost__form--comment
-      Comment
-      = f.text_field :comment
-    .NewOrEditPost__form--imege
-      Image
-      = f.file_field :image
-    .NewOrEditPost__form--url
-      URL
-      = f.text_field :url
-    .NewOrEditPost__form--submit
-      = f.submit "Send"
-      = link_to "back", :back
+#account-page.account-page
+  .account-page__inner
+    .account-page__inner__text
+      New Post
+    .NewOrEditPost__form
+      = form_with model: @post, local: true do |f|
+        .field
+          .field-label
+            = f.label :image,"Image"
+          .NewOrEditPost__form--imege
+            = f.file_field :image, class: "text_form"
+        .field
+          .field-label
+            = f.label :image,"Title"
+          .NewOrEditPost__form--title
+            = f.text_field :title, class: "text_form"
+        .field
+          .field-label
+            = f.label :image,"Comment"
+          .NewOrEditPost__form--comment
+            = f.text_area :comment, rows: 10, cols: 58, wrap: "hard", class: "text_area text_form"
+        .field
+          .field-label
+            = f.label :image,"URL"
+          .NewOrEditPost__form--url
+            = f.text_field :url, class: "text_form"
+        .NewOrEditPost__form--btn
+          .NewOrEditPost__form--btn--submit
+            = f.submit "Send", class: "submit__btn"
+          .NewOrEditPost__form--btn--back
+            = link_to "back", :back, class: "back__btn"
