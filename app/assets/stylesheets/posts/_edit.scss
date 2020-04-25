@@ -1,0 +1,62 @@
+.NewOrEditPost__form--imege{
+  
+}
+
+.NewOrEditPost__form--title{
+
+}
+
+.NewOrEditPost__form--comment{
+
+}
+
+.NewOrEditPost__form--url{
+
+}
+
+.NewOrEditPost__form--btn{
+  text-align: center;
+
+  &--submit{
+    margin-top: 40px;
+  }
+
+  &--back{
+    margin-top: 20px;
+  }
+}
+
+
+//ボタンパーツ
+
+.text_form{
+  width: 100%;
+}
+
+.submit__btn{
+  @include showBtn;
+  font-size: 1.6rem;
+  padding: 0 160px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  &:hover{
+    background: #2c2c2c;
+    color: $mainfontcolor;
+  }
+}
+
+.back__btn{
+  @include showBtn;
+  background: #ccc;
+  border: solid 1px #ccc;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 0 100px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+
+  &:hover{
+    background    : rgb(168, 167, 167);
+    color: $mainfontcolor;   
+  }
+}

@@ -129,15 +129,6 @@
         padding: 10px;
         letter-spacing: 1px;
       }
-
-      #user_programming_lang{
-        border: solid 1px gainsboro;
-        padding: 10px;
-        }
-      #user_pr{
-      border: solid 1px gainsboro;
-      padding: 10px;
-      }
     }
   }
         .guest{
@@ -247,4 +238,10 @@
   border-radius: 6px;
   padding: 0 5px;
   height: 19px;
+}
+
+//text_area formのcss
+.text_area{
+  border: solid 1px gainsboro;
+  padding: 10px;
 }
