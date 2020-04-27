@@ -1,28 +1,31 @@
-.NewOrEditPost__form--imege{
+.NewOrEditPost__form{
   
-}
+  
+  // 編集画面のプレビュー画像表示
+  #image_prev{
+    width: 350px;
 
-.NewOrEditPost__form--title{
+  }
+  #image_prev:hover{
+    box-shadow: 2px 1px 3px 1px;
+    transition-duration: 0.3s;
 
-}
-
-.NewOrEditPost__form--comment{
-
-}
-
-.NewOrEditPost__form--url{
-
-}
-
-.NewOrEditPost__form--btn{
-  text-align: center;
-
-  &--submit{
-    margin-top: 40px;
   }
 
-  &--back{
-    margin-top: 20px;
+  #post_image{
+    display: none;
+  }
+
+  &--btn{
+    text-align: center;
+
+    &--submit{
+      margin-top: 40px;
+    }
+
+    &--back{
+      margin-top: 20px;
+    }
   }
 }
 
