@@ -11,7 +11,7 @@ $(document).on('turbolinks:load', function(){
     }
     
     // ファイル読み込みが完了した際のイベント登録
-    reader.onload = (function(file) {
+    reader.onload = (function() {
 
       return function(e) {
         //既存のプレビューを削除

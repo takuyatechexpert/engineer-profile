@@ -37,7 +37,8 @@
         .posts__title
           portfolio
         .posts__form
-          = link_to "New Post", new_post_path, class: "new__post__btn"
+          - if current_user == @user
+            = link_to "New Post", new_post_path, class: "new__post__btn"
 
         .posts__list
           - @user.posts.each do |post|
