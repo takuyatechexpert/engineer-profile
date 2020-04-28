@@ -17,7 +17,7 @@ $(document).on('turbolinks:load', function(){
         //既存のプレビューを削除
         $preview.empty();
         // .prevewの領域の中にロードした画像を表示するimageタグを追加
-        $preview.append($('<img>').attr({
+        $preview.replaceWith($('<img>').attr({
                   src: e.target.result,
                   class: "preview",
               }));
