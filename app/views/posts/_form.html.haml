@@ -2,7 +2,7 @@
   = form_with model: @post, local: true do |f|
     .field
       .field-label
-
+        -# persisted?は@postのような、ActiveRecord::Baseを継承しているインスタンスが利用できるメソッド
         - if post.persisted?
           = f.label :image do
             = image_tag post.image.url, id: "image_prev" if post.image?

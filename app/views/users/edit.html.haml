@@ -6,8 +6,11 @@
       = form_for(current_user) do |f|
         .field
           .field-label
-            = f.label :image do
-              = image_tag @user.image.url, class: "imageFieldLabel" if @user.image?
+            - if @user.image?
+              = f.label :image do
+                = image_tag @user.image.url, class: "imageFieldLabel"
+            - else
+              = f.label :image,"-", class: "imageFieldLabel"
           .field-input
             = f.file_field :image, class: "imageField"
         .field
