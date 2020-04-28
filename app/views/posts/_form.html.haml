@@ -1,32 +1,35 @@
-#account-page.account-page
-  .account-page__inner
-    .account-page__inner__text
-      New Post
-    .NewOrEditPost__form
-      = form_with model: @post, local: true do |f|
-        .field
-          .field-label
-            = f.label :image,"Image" do
-              = image_tag post.image.url, id: "image_prev" if post.image?
-          .NewOrEditPost__form--imege
-            = f.file_field :image, class: "text_form", id: "post_image"
-        .field
-          .field-label
-            = f.label :title,"Title"
-          .NewOrEditPost__form--title
-            = f.text_field :title, class: "text_form"
-        .field
-          .field-label
-            = f.label :comment,"Comment"
-          .NewOrEditPost__form--comment
-            = f.text_area :comment, rows: 10, cols: 58, wrap: "hard", class: "text_area text_form"
-        .field
-          .field-label
-            = f.label :url,"URL"
-          .NewOrEditPost__form--url
-            = f.text_field :url, class: "text_form"
-        .NewOrEditPost__form--btn
-          .NewOrEditPost__form--btn--submit
-            = f.submit "Send", class: "submit__btn"
-          .NewOrEditPost__form--btn--back
-            = link_to "back", :back, class: "back__btn"
+.NewOrEditPost__form
+  = form_with model: @post, local: true do |f|
+    .field
+      .field-label
+
+        - if post.persisted?
+          = f.label :image do
+            = image_tag post.image.url, id: "image_prev" if post.image?
+        - else
+          = f.label :image do
+            .new-post-image-form
+              クリックして画像を選択してください
+
+      .NewOrEditPost__form--imege
+        = f.file_field :image, class: "text_form", id: "post_image"
+    .field
+      .field-label
+        = f.label :title,"Title"
+      .NewOrEditPost__form--title
+        = f.text_field :title, class: "text_form"
+    .field
+      .field-label
+        = f.label :comment,"Comment"
+      .NewOrEditPost__form--comment
+        = f.text_area :comment, rows: 10, cols: 58, wrap: "hard", class: "text_area text_form"
+    .field
+      .field-label
+        = f.label :url,"URL"
+      .NewOrEditPost__form--url
+        = f.text_field :url, class: "text_form"
+    .NewOrEditPost__form--btn
+      .NewOrEditPost__form--btn--submit
+        = f.submit "Send", class: "submit__btn"
+      .NewOrEditPost__form--btn--back
+        = link_to "back", :back, class: "back__btn"
