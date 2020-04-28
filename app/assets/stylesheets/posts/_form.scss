@@ -1,6 +1,5 @@
 .NewOrEditPost__form{
   
-  
   // 編集画面のプレビュー画像表示
   #image_prev{
     width: 350px;
@@ -9,11 +8,23 @@
   #image_prev:hover{
     box-shadow: 2px 1px 3px 1px;
     transition-duration: 0.3s;
-
   }
 
   #post_image{
     display: none;
+  }
+
+  .new-post-image-form{
+    font-size: 1rem;
+    background: #a5a5a5;
+    height: 150px;
+    width: 100%;
+    line-height: 150px;
+    text-align: center;
+  }
+  .new-post-image-form:hover{
+    box-shadow: 1px 1px 6px 1px;
+    transition-duration: 0.3s;  
   }
 
   &--btn{
