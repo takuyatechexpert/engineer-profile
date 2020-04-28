@@ -13,16 +13,23 @@ http://18.178.126.210/
 ## ○ユーザー検索機能
 jqueyを使用して検索結果を表示させています
 検索ワードを入力したと同時に検索結果が表示されます
-[![Image from Gyazo](https://i.gyazo.com/2a9724a35e1cc6c7440f2cfe65468546.gif)](https://gyazo.com/2a9724a35e1cc6c7440f2cfe65468546)
+[![Image from Gyazo](https://i.gyazo.com/e98c638ae907280ea4c3ebb7e57278a6.gif)](https://gyazo.com/e98c638ae907280ea4c3ebb7e57278a6)
 
 ## ○フォロー機能
-[![Image from Gyazo](https://i.gyazo.com/b863afe38eff215e2dc494697aef45c6.gif)](https://gyazo.com/b863afe38eff215e2dc494697aef45c6)
+jqueryを使用しています
+[![Image from Gyazo](https://i.gyazo.com/257bf066f173022fa0be42d88f453746.gif)](https://gyazo.com/257bf066f173022fa0be42d88f453746)
 
 ## ○markdown記法
 PR,使用言語にはmarkdown記法が使用できます
-
 [![Image from Gyazo](https://i.gyazo.com/2868bc434bfce2037aad7db18c13aecb.jpg)](https://gyazo.com/2868bc434bfce2037aad7db18c13aecb)
 
+## ○ポートフォリオ、作品投稿機能
+[![Image from Gyazo](https://i.gyazo.com/8b6e94601fcdedf98b980d2dfc0ba8a1.jpg)](https://gyazo.com/8b6e94601fcdedf98b980d2dfc0ba8a1)
+
+## ○ポートフォリオ、作品編集機能
+jqueryを使用して編集画面で保存画像のプレビューを表示
+新規投稿画面では選択した画像をプレビュー表示させる
+[![Image from Gyazo](https://i.gyazo.com/fba6117b7ecd283643d797463bfdd991.gif)](https://gyazo.com/fba6117b7ecd283643d797463bfdd991)
 
 # Enginner Profile DB設計
 

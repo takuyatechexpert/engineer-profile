@@ -45,13 +45,14 @@
             .posts__list__card
               .posts__list__card--image
                 = image_tag post.image.url
-              .posts__list__card--work 
-                = image_tag "arrow_top.png", class: "posts__list__card--work--arrow"
-                %ul
-                  %li
-                    = link_to "Edit", edit_post_path(post.id)
-                  %li
-                    = link_to "Delete", post_path(post.id), method: :delete
+              .posts__list__card--work
+                - if current_user == @user
+                  = image_tag "arrow_top.png", class: "posts__list__card--work--arrow"
+                  %ul
+                    %li
+                      = link_to "Edit", edit_post_path(post.id)
+                    %li
+                      = link_to "Delete", post_path(post.id), method: :delete
 
               .posts__list__card--title
                 = post.title
