@@ -29,7 +29,7 @@ PR,使用言語にはmarkdown記法が使用できます
 ## ○ポートフォリオ、作品編集機能
 jqueryを使用して編集画面で保存画像のプレビューを表示
 新規投稿画面では選択した画像をプレビュー表示させる
-[![Image from Gyazo](https://i.gyazo.com/79a6809cf48cbb45c345b6f49b88df9c.gif)](https://gyazo.com/79a6809cf48cbb45c345b6f49b88df9c)
+[![Image from Gyazo](https://i.gyazo.com/7380d305ce48c91fadb8c59266095df6.gif)](https://gyazo.com/7380d305ce48c91fadb8c59266095df6)
 
 # Enginner Profile DB設計
 
