@@ -56,6 +56,6 @@
               .posts__list__card--title
                 = post.title
               .posts__list__card--comment
-                = post.comment
+                = simple_format(post.comment)
               .posts__list__card--url
                 = link_to "#{post.url}", "#{post.url}", target: :_blank, class: "url__btn"
