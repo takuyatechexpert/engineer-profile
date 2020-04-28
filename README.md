@@ -17,7 +17,7 @@ jqueyを使用して検索結果を表示させています
 
 ## ○フォロー機能
 jqueryを使用しています
-[![Image from Gyazo](https://i.gyazo.com/257bf066f173022fa0be42d88f453746.gif)](https://gyazo.com/257bf066f173022fa0be42d88f453746)
+[![Image from Gyazo](https://i.gyazo.com/8eba2931b05e1cd338d05f4d81d0b722.gif)](https://gyazo.com/8eba2931b05e1cd338d05f4d81d0b722)
 
 ## ○markdown記法
 PR,使用言語にはmarkdown記法が使用できます
